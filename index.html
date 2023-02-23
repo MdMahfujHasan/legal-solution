@@ -15,7 +15,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
     </style>
-    <link rel="stylesheet" href="style.scss">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
     <!-- Customizing  -->
     <script>
         tailwind.config = {
@@ -197,6 +198,68 @@
                 client is an individual or entity that hires a lawyer or law firm to represent them in
                 legal matters. Clients may communicate with their lawyers in a variety of ways, depending on the
                 situation and the nature of the legal representation.</p>
+            <div>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/slider-1.jpg" style="width:100%">
+                        <div class="text">
+                            <img class="mx-auto mb-6" src="images/profile.png" alt="Profile">
+                            <h3 class="text-white font-EBGaramond text-2xl font-extrabold ">Awlad Hossain</h3>
+                            <h4 class="text-white font-normal text-base font-poppings mt-1 mb-8">UI/UX Designer</h4>
+                            <p class="text-contact font-poppings font-normal text-base">A UI/UX (User Interface/User
+                                Experience) designer is a professional who focuses on the design and creation of user
+                                interfaces for digital products, such as websites, mobile applications, software
+                                applications, and other interactive digital platforms.</p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/slider-2.jpg" style="width:100%">
+                        <div class="text">
+                            <img class="mx-auto mb-6" src="images/profile.png" alt="Profile">
+                            <h3 class="text-white font-EBGaramond text-2xl font-extrabold ">Awlad Hossain</h3>
+                            <h4 class="text-white font-normal text-base font-poppings mt-1 mb-8">UI/UX Designer</h4>
+                            <p class="text-contact font-poppings font-normal text-base">A UI/UX (User Interface/User
+                                Experience) designer is a professional who focuses on the design and creation of user
+                                interfaces for digital products, such as websites, mobile applications, software
+                                applications, and other interactive digital platforms.</p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/slider-3.jpg" style="width:100%">
+                        <div class="text">
+                            <img class="mx-auto mb-6" src="images/profile.png" alt="Profile">
+                            <h3 class="text-white font-EBGaramond text-2xl font-extrabold">Awlad Hossain
+                            </h3>
+                            <h4 class="text-white font-normal text-base font-poppings mt-1 mb-8">UI/UX Designer</h4>
+                            <p class="text-contact font-poppings font-normal text-base">A UI/UX (User Interface/User
+                                Experience) designer is a professional who focuses on the design and creation of user
+                                interfaces for digital products, such as websites, mobile applications, software
+                                applications, and other interactive digital platforms.</p>
+                        </div>
+                    </div>
+
+                    <a class="prev f" onclick="plusSlides(-1)">
+                        <i class="fa-solid fa-chevron-left text-3xl"></i>
+                    </a>
+                    <a class="next" onclick="plusSlides(1)">
+                        <i class="fa-solid fa-chevron-right text-3xl"></i>
+                    </a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </section>
         <!-- FAQ Section -->
         <section class="container mx-auto">
@@ -384,6 +447,8 @@
             </div>
         </section>
     </footer>
+    <!-- Javascript -->
+    <script src="app.js"></script>
 </body>
 
 </html>
