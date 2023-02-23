@@ -15,6 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
     </style>
+    <link rel="stylesheet" href="style.scss">
     <!-- Customizing  -->
     <script>
         tailwind.config = {
@@ -198,7 +199,7 @@
                 situation and the nature of the legal representation.</p>
         </section>
         <!-- FAQ Section -->
-        <section>
+        <section class="container mx-auto">
             <h2 class="text-center font-EBGaramond text-sectionTitle text-4xl font-extrabold ">Frequently Asked
                 Questions
             </h2>
@@ -207,8 +208,78 @@
                 product, or service. By providing clear and concise answers to frequently asked questions, FAQs can help
                 save time and improve customer satisfaction by making information easily accessible.</p>
             <div class="grid grid-cols-2">
-                <div>
-
+                <div class="flex items-center">
+                    <div>
+                        <details>
+                            <summary
+                                class="border-2 bg-slate-600 cursor-pointer hover:bg-slate-700 font-bold text-white px-4 py-4 rounded-lg">
+                                What's the difference between Flex and Grid?</summary>
+                            <p>Flexbox is designed for creating one-dimensional layouts, where elements are arranged
+                                along a single axis (either horizontally or vertically). It is best suited for layouts
+                                where you want to distribute elements along a single row or column, and control their
+                                spacing, alignment, and ordering. Flexbox is great for creating responsive designs that
+                                adapt to different screen sizes and device orientations.
+                                <br>
+                                On the other hand, CSS Grid is designed for creating two-dimensional layouts, where
+                                elements are arranged in rows and columns. It is best suited for layouts where you want
+                                to create complex grid-based designs, such as those found in magazines or newspapers.
+                                CSS Grid allows you to define the size and position of grid items in a more granular way
+                                than Flexbox, which can be useful for creating complex layouts.
+                            </p>
+                        </details>
+                        <details class="my-6">
+                            <summary
+                                class="border-2 bg-slate-600 cursor-pointer hover:bg-slate-700 font-bold text-white px-4 py-4 rounded-lg">
+                                What's the purpose of media query?</summary>
+                            <p>Media queries allow you to define specific rules for different screen sizes, device
+                                orientations, pixel densities, and other characteristics of the device. This enables you
+                                to create a responsive design that adapts to different screen sizes and device types,
+                                without having to create separate versions of your site for each device.</p>
+                        </details>
+                        <details class="my-6">
+                            <summary
+                                class="border-2 bg-slate-600 cursor-pointer hover:bg-slate-700 font-bold text-white px-4 py-4 rounded-lg">
+                                What's CSS Box Model and how does it works?</summary>
+                            <p>The CSS Box Model is a fundamental concept in CSS that defines how the content of a web
+                                page is laid out and displayed within rectangular boxes. Every HTML element on a web
+                                page is considered a box, and the CSS Box Model describes the different parts of that
+                                box and how they are sized and positioned.
+                                <br>
+                                The CSS Box Model consists of four parts:
+                                1. Content - This is the actual content of the element, such as text, images, or other
+                                HTML elements.
+                                <br>
+                                2. Padding - This is the space between the content and the border of the element. It
+                                can be used to add space around the content, or to create visual effects.
+                                <br>
+                                3. Border - This is the edge of the element that separates the content from the padding
+                                and margin. It can be styled in different ways to create different visual effects.
+                                <br>
+                                4. Margin - This is the space between the border of the element and the surrounding
+                                elements. It can be used to create space between elements, or to center elements on
+                                a page.
+                            </p>
+                        </details>
+                        <details>
+                            <summary
+                                class="border-2 bg-slate-600 cursor-pointer hover:bg-slate-700 font-bold text-white px-4 py-4 rounded-lg">
+                                What's
+                                semantic tags?
+                            </summary>
+                            <p>Semantic tags in HTML are elements that convey meaning to both the browser and the
+                                developer. They provide a way to describe the content of a web page in a meaningful way,
+                                rather than just indicating how the content should be displayed.
+                                <br>
+                                Semantic tags are important because they help search engines and screen readers
+                                understand the content of a web page, which can improve accessibility and search engine
+                                optimization (SEO). By using semantic tags, developers can create well-structured and
+                                meaningful HTML code that is easier to maintain and understand.
+                                <br>
+                                Examples of semantic tags include
+                                header, nav, main, section, article, aside, and footer.
+                            </p>
+                        </details>
+                    </div>
                 </div>
                 <div>
                     <img src="images/faq.png" alt="FAQ">
