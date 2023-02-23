@@ -45,12 +45,12 @@
 
 <body>
     <header class="mb-28">
-        <nav class="flex justify-evenly my-12">
-            <a href="#">
+        <nav class="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly my-12">
+            <a href="#" class="ml-6 mb-4 sm:hidden md:hidden lg:block">
                 <img class="w-40 h-11" src="images/logo2.png" alt="Logo">
             </a>
-            <div class="flex items-center">
-                <div>
+            <div class="flex items-center ml-6 mb-4">
+                <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row gap-6">
                     <a class="font-poppings font-normal text-description text-base" href="#">Home</a>
                     <a class="font-normal text-description text-base mx-8" href="#">Services
                         <i class="fa-solid fa-chevron-right"></i>
@@ -66,14 +66,13 @@
                     </a>
                 </div>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center ml-4">
                 <button class="text-white font-poppings text-lg font-semibold bg-principal rounded-lg px-7 py-5">Free
                     Consultation</button>
             </div>
         </nav>
-        <!-- bg-gradient-to-b from-[#111111] to-[#11111100] -->
         <!-- Banner Section -->
-        <section class="bg-sectionBanner bg-no-repeat rounded-lg bg-center">
+        <section class="bg-sectionBanner bg-no-repeat rounded-lg bg-center hidden sm:hidden md:hidden lg:block">
             <div class="px-60 py-28">
                 <h1 class="text-white text-7xl font-extrabold font-EBGaramond text-center">We Provide Effective
                 </h1>
@@ -87,7 +86,8 @@
                     advice to individuals, businesses, and organizations.</p>
                 <div class="text-center">
                     <input class="py-5 pl-5 pr-80 rounded-lg mr-6" type="text" placeholder="Search your services">
-                    <input class="text-white font-poppings text-lg font-semibold bg-principal rounded-lg px-10 py-4"
+                    <input
+                        class="text-white font-poppings text-lg font-semibold bg-principal rounded-lg mt-1 px-10 py-4"
                         type="button" value="Search">
                 </div>
             </div>
@@ -103,7 +103,7 @@
                 refers to a specific area of law that a lawyer or law firm specializes in. Legal practice areas can be
                 broad, such as corporate law or litigation, or more specialized, such as intellectual property or
                 immigration law.</p>
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto">
                 <div class="px-16 pt-14 pb-16 border-b-2">
                     <img class="mx-auto" src="images/business.png" alt="Business Law">
                     <h4 class="font-EBGaramond font-extrabold text-sectionTitle text-3xl mt-8 mb-6 text-center">
@@ -270,7 +270,7 @@
                 refers to a list of commonly asked questions and their corresponding answers about a particular topic,
                 product, or service. By providing clear and concise answers to frequently asked questions, FAQs can help
                 save time and improve customer satisfaction by making information easily accessible.</p>
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                 <div class="flex items-center">
                     <div>
                         <details>
@@ -356,8 +356,8 @@
             <p class="text-center font-poppings font-normal text-description text-base mt-6 mb-16 w-2/3 mx-auto">This
                 section typically includes a form that visitors can fill out to send a message or inquiry, as well as
                 information about other ways to contact the website, such as by email or phone.</p>
-            <div class="grid grid-cols-2 gap-7">
-                <div class="grid grid-cols-2">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
                     <div class="px-16 py-16 bg-contact border-b-2 border-r-2">
                         <img class="mx-auto" src="images/location.png" alt="Location">
                         <h5 class="text-center my-4 text-sectionTitle font-EBGaramond text-2xl font-extrabold">Address
@@ -390,19 +390,24 @@
                     </div>
                 </div>
                 <div>
-                    <input class="py-7 pl-7 pr-96 bg-contact outline-0" type="text" placeholder="Your Name">
-                    <input class="py-7 pl-7 pr-96 bg-contact outline-0 my-7" type="email" placeholder="Your Email">
-                    <input class="py-7 pl-7 pr-96 bg-contact outline-0" type="text" placeholder="Subject">
-                    <input class="pt-7 pb-28 pl-7 pr-96 bg-contact outline-0 my-7" type="text"
-                        placeholder="Your Message">
-                    <input class="px-52 py-5 bg-principal rounded-lg text-white font-poppings font-semibold text-xl"
+                    <input class="py-7 pl-7 pr-60 sm:pr-60 md:pr-60 lg:pr-96  bg-contact outline-0" type="text"
+                        placeholder="Your Name">
+                    <input class="py-7 pl-7 pr-60 sm:pr-60 md:pr-60 lg:pr-96 bg-contact outline-0 my-7" type="email"
+                        placeholder="Your Email">
+                    <input class="py-7 pl-7 pr-60 sm:pr-60 md:pr-60 lg:pr-96 bg-contact outline-0" type="text"
+                        placeholder="Subject">
+                    <input class="pt-7 pb-28 pl-7 pr-60 sm:pr-60 md:pr-60 lg:pr-96  bg-contact outline-0 my-7"
+                        type="text" placeholder="Your Message">
+                    <input
+                        class="px-40 sm:px-40 md:px-40 lg:px-52 py-5 bg-principal rounded-lg text-white font-poppings font-semibold text-xl"
                         type="submit" value="Send Message">
                 </div>
             </div>
         </section>
     </main>
     <footer class="bg-gray-900">
-        <section class="grid grid-cols-4 gap-20 py-28 container mx-auto">
+        <section
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 pl-2 sm:pl-2 md:pl-2 lg:pl-0 py-28 container mx-auto">
             <div>
                 <img src="images/logo.png" alt="Logo">
                 <p class="font-poppings font-normal text-footer text-base mt-8">In most countries, the legal system is
@@ -438,10 +443,11 @@
                     won't
                     send you spam mails.</p>
                 <div class="flex">
-                    <input class="py-3 pl-4 pr-8 rounded-lg" type="text" placeholder="Email Address">
+                    <input class="py-3 pl-4 pr-8 rounded-lg hidden sm:hidden md:hidden lg:block" type="text"
+                        placeholder="Email Address">
                     <button>
                         <i
-                            class="fa-solid fa-paper-plane px-4 py-4 bg-principal text-white rounded-lg relative right-3"></i>
+                            class="fa-solid fa-paper-plane px-4 py-4 bg-principal text-white rounded-lg relative right-3 hidden sm:hidden md:hidden lg:block"></i>
                     </button>
                 </div>
             </div>
