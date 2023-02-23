@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solution</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6c0e978889.js" crossorigin="anonymous"></script>
+    <!-- Google Font >>> Poppins, EB Garamond -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    </style>
+    <!-- Customizing  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        description: '#707070',
+                        principal: '#B68C5A',
+                        division: '#E7E7E7',
+                        sectionTitle: '#414040',
+                    },
+                    fontFamily: {
+                        poppins: 'Poppins',
+                        EBGaramond: 'EB Garamond',
+                    },
+                    backgroundImage: {
+                        'sectionBanner': "url('images/banner.png')"
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="mb-28">
+        <nav class="flex justify-evenly my-12">
+            <a href="#">
+                <img class="w-40 h-11" src="images/logo2.png" alt="Logo">
+            </a>
+            <div class="flex items-center">
+                <div>
+                    <a class="font-poppings font-normal text-description text-base" href="#">Home</a>
+                    <a class="font-normal text-description text-base mx-8" href="#">Services
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a class="font-poppings font-normal text-description text-base" href="#">Cases
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a class="font-poppings font-normal text-description text-base mx-8" href="#">Blog
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a class="font-poppings font-normal text-description text-base" href="#">Contact Us
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <button class="text-white font-poppings text-lg font-semibold bg-principal rounded-lg px-7 py-5">Free
+                    Consultation</button>
+            </div>
+        </nav>
+        <!-- bg-gradient-to-b from-[#111111] to-[#11111100] -->
+        <!-- Banner Section -->
+        <section class="bg-sectionBanner bg-no-repeat rounded-lg bg-center">
+            <div class="px-60 py-28">
+                <h1 class="text-white text-7xl font-extrabold font-EBGaramond text-center">We Provide Effective
+                </h1>
+                <h1 class="text-white text-7xl font-extrabold font-EBGaramond text-center">Legal Solutions</h1>
+                <p class="text-division text-base font-normal font-poppings mt-6 mb-8 text-center">Legal solutions
+                    refer to the
+                    means of
+                    resolving legal problems or disputes through various legal
+                    processes or methods. It involves using legal knowledge and expertise to provide solutions to legal
+                    issues, such as resolving disputes, drafting contracts, negotiating settlements, and providing legal
+                    advice to individuals, businesses, and organizations.</p>
+                <div class="text-center">
+                    <input class="py-5 pl-5 pr-80 rounded-lg mr-6" type="text" placeholder="Search your services">
+                    <input class="text-white font-poppings text-lg font-semibold bg-principal rounded-lg px-10 py-4"
+                        type="button" value="Search">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Legal Practice Area Section -->
+        <section class="mb-28">
+            <h2 class="text-center font-EBGaramond text-sectionTitle text-4xl font-extrabold ">The Legal Practice Area
+            </h2>
+            <p class="text-center font-poppings font-normal text-description text-base mt-6 mb-16 w-2/3 mx-auto">A legal
+                practice area
+                refers to a specific area of law that a lawyer or law firm specializes in. Legal practice areas can be
+                broad, such as corporate law or litigation, or more specialized, such as intellectual property or
+                immigration law.</p>
+            <div class="grid grid-cols-3">
+                <div class="px-16 pt-14 pb-16 border-b-2">
+                    <img class="mx-auto" src="images/business.png" alt="Business Law">
+                    <h4 class="font-EBGaramond font-extrabold text-sectionTitle text-3xl mt-8 mb-6 text-center">
+                        Business Law</h4>
+                    <p class="text-description text-base font-normal font-poppings text-center">Business law is a legal
+                        practice
+                        area that deals with the legal aspects of businesses and
+                        commercial activities. It encompasses a broad range of legal issues, including contracts,
+                        business organizations, intellectual property, employment law, and commercial transactions.</p>
+                    <button class="mt-8 mx-auto container">
+                        <i class="fa-solid fa-arrow-right px-2.5 py-2.5 bg-principal rounded-full text-white"></i>
+                    </button>
+                </div>
+                <div
+                    class="px-16 pt-14 pb-16  bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] border-division border-2 border-solid">
+                    <img class="mx-auto" src="images/criminal.png" alt="Criminal Law">
+                    <h4 class="font-EBGaramond font-extrabold text-sectionTitle text-3xl mt-8 mb-6 text-center">Criminal
+                        Law</h4>
+                    <p class="text-description text-base font-normal font-poppings  text-center">Criminal law is a legal
+                        practice
+                        area that deals with the prosecution and defense of individuals
+                        or entities accused of committing crimes. Crimes are defined as acts that are prohibited by law
+                        and punishable by imprisonment or fines.</p>
+                    <button class="mt-8 mx-auto container">
+                        <i class="fa-solid fa-arrow-right px-2.5 py-2.5 bg-principal rounded-full text-white"></i>
+                    </button>
+                </div>
+                <div class="px-16 pt-14 pb-16 border-b-2">
+                    <img class="mx-auto" src="images/child.png" alt="Child Support">
+                    <h4 class="font-EBGaramond font-extrabold text-sectionTitle text-3xl mt-8 mb-6 text-center">Child
+                        Support</h4>
+                    <p class="text-description text-base font-normal font-poppings text-center">Child support law is a
+                        legal
+                        practice area that deals with the financial support of children
+                        following the separation or divorce of their parents. Child support is typically ordered by a
+                        court and is intended to ensure that both parents contribute financially to the upbringing of
+                        their child or children.</p>
+                    <button class="mt-8 mx-auto container">
+                        <i class="fa-solid fa-arrow-right px-2.5 py-2.5 bg-principal rounded-full text-white"></i>
+                    </button>
+                </div>
+                <div class="px-16 pt-14 pb-16">
+                    <img class="mx-auto" src="images/education.png" alt="Education Law">
+                    <h4 class="font-EBGaramond font-extrabold text-sectionTitle text-3xl mt-8 mb-6 text-center">
+                        Education Law</h4>
+                    <p class="text-description text-base font-normal font-poppings text-center">Education law refers to
+                        the set of
+                        legal rules, regulations, and policies that govern the
+                        administration of education systems, including public and private schools, colleges, and
+                        universities. Education law covers a broad range of legal issues related to education.</p>
+                    <button class="mt-8 mx-auto container">
+                        <i class="fa-solid fa-arrow-right px-2.5 py-2.5 bg-principal rounded-full text-white"></i>
+                    </button>
+                </div>
+                <div class="px-16 pt-14 pb-16 border-x-2">
+                    <img class="mx-auto" src="images/divorce.png" alt="Divorce Law">
+                    <h4 class="font-EBGaramond font-extrabold text-sectionTitle text-3xl mt-8 mb-6 text-center">Divorce
+                        Law</h4>
+                    <p class="text-description text-base font-normal font-poppings text-center">Divorce law refers to
+                        the legal
+                        rules, regulations, and procedures governing the process of
+                        ending a marriage. Divorce laws vary by jurisdiction. E.g. Grounds for divorce is the
+                        reason for which a divorce can be granted, which can include irreconcilable differences,
+                        adultery, cruelty, and abandonment.
+                    </p>
+                    <button class="mt-8 mx-auto container">
+                        <i class="fa-solid fa-arrow-right px-2.5 py-2.5 bg-principal rounded-full text-white"></i>
+                    </button>
+                </div>
+                <div class="px-16 pt-14 pb-16">
+                    <img class="mx-auto" src="images/tax.png" alt="Tax Law">
+                    <h4 class="font-EBGaramond font-extrabold text-sectionTitle text-3xl mt-8 mb-6 text-center">Tax Law
+                    </h4>
+                    <p class="text-description text-base font-normal font-poppings text-center">Tax law refers to the
+                        set of legal
+                        rules, regulations, and policies that
+                        govern the assessment,
+                        collection, and distribution of taxes by governments. It is a complex and ever-changing field
+                        that covers a wide range of taxes, including income tax, sales tax, property tax, estate and
+                        gift tax, and others. </p>
+                    <button class="mt-8 mx-auto container">
+                        <i class="fa-solid fa-arrow-right px-2.5 py-2.5 bg-principal rounded-full text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- What Our Clients Say Section -->
+        <section>
+            <h2 class="text-center font-EBGaramond text-sectionTitle text-4xl font-extrabold ">What Our Clients Say
+            </h2>
+            <p class="text-center font-poppings font-normal text-description text-base mt-6 mb-16 w-2/3 mx-auto">A
+                client is an individual or entity that hires a lawyer or law firm to represent them in
+                legal matters. Clients may communicate with their lawyers in a variety of ways, depending on the
+                situation and the nature of the legal representation.</p>
+        </section>
+        <!-- FAQ Section -->
+        <section>
+            <h2 class="text-center font-EBGaramond text-sectionTitle text-4xl font-extrabold ">Frequently Asked
+                Questions
+            </h2>
+            <p class="text-center font-poppings font-normal text-description text-base mt-6 mb-16 w-2/3 mx-auto">It
+                refers to a list of commonly asked questions and their corresponding answers about a particular topic,
+                product, or service. By providing clear and concise answers to frequently asked questions, FAQs can help
+                save time and improve customer satisfaction by making information easily accessible.</p>
+            <div>
+                <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
