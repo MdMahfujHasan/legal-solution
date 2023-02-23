@@ -46,7 +46,7 @@
 <body>
     <header class="mb-28">
         <nav class="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly my-12">
-            <a href="#" class="ml-6 mb-4 sm:hidden md:hidden lg:block">
+            <a href="index.html" class="ml-6 mb-4 sm:hidden md:hidden lg:block">
                 <img class="w-40 h-11" src="images/logo2.png" alt="Logo">
             </a>
             <div class="flex items-center ml-6 mb-4">
@@ -67,8 +67,15 @@
                 </div>
             </div>
             <div class="flex items-center ml-4">
-                <button class="text-white font-poppings text-lg font-semibold bg-principal rounded-lg px-7 py-5">Free
+                <button id="myBtn"
+                    class="text-white font-poppings text-lg font-semibold bg-principal rounded-lg px-7 py-5">Free
                     Consultation</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content bg-slate-600">
+                        <span class="close">&times;</span>
+                        <p class="text-center text-white w-1/2 mx-auto">Coming soon...</p>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- Banner Section -->
